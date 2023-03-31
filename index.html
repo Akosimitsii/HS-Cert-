@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certification Request</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body >
+  <div class="row">
+    <div class="col">
+      <div style="border: 1px solid black;" class="round rounded-3 m-5 p-5 bg-primary-subtle">
+        <label class="form-label">Name: </label><input type="text" id="name" class="form-control" placeholder="SURNAME, FIRSTNAME MIDDLE NAME" style="text-transform: uppercase;">
+    
+        <label class="form-label">Grade: </label>
+        <select id="grade"   class="form-control" >
+          <option value="GRADE 11">Grade 11</option>
+          <option value="GRADE 12">Grade 12</option>
+        </select><br>
+    
+        <label class="form-label">Strand:</label>
+        <select id="strand" class="form-control" >
+          <option value="Accountancy Business and Management">Accountancy Business and Management</option>
+          <option value="Arts and Design">Arts and Design</option>
+          <option value="General Academic Strand">General Academic Strand</option>
+          <option value="Humanities and Social Sciences">Humanities and Social Sciences</option>
+          <option value="Science and Technology, Engineering and Mathematics">Science and Technology, Engineering and Mathematics</option>
+          <option value="Technical Vocational Livelihood - Home Economics">Technical Vocational Livelihood - Home Economics</option>
+          <option value="Technical Vocational Livelihood - Information and Communication Technology">Technical Vocational Livelihood - Information and Communication Technology</option>
+        </select><br>
+    
+        <label class="form-label">Semester:</label> 
+        <select id="sem"   class="form-control" >
+          <option value="FIRST SEMESTER">FIRST SEMESTER</option>
+          <option value="SECOND SEMESTER">SECOND SEMESTER</option>
+
+        </select><br>        
+        
+        <label class="form-label">Day:</label> <input type="number" id="day"  class="form-control"><br>
+
+        <label class="form-label">Month:</label>
+        <select id="month" class="form-control" >
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+    
+        </select><br>
+        <button class="btn btn-primary" onclick="Go();">Generate Certificate</button>
+      </div>
+    </div>
+    <div class="col" id="cert-div">
+      <div style="margin-right: 1in;margin-left: 1in; ">
+        <center>
+            <table style="font-family: Arial, Helvetica, sans-serif;"><br><br>
+                    <td width="77" height="79" valign="top">
+                        <img src="pcaat-logo.png" width="73" height="73" />
+                    </td>
+                    <td width="484" align="center">
+                        <p>
+                            <strong><span><span><span>Department of Education </span></span><br />
+                                    <span style="font-size: 12pt;">Philippine College of Advanced Arts and Technology</span></span><br />
+                                SY 2022 - 2023</strong> <br>
+                            <span style="font-size: 9pt;"> 1914 Do&ntilde;a Faustina Building, Recto Ave, Quiapo, Manila,
+                                Philippines</span>
+                            <span style="font-size: 9pt;"><br /> (+639)17-156-4255 &bull; www.pcaat.com.ph </span><br />
+                            <br />
+                        </p>
+                    </td>
+                    <td width="112" align="right" valign="top"><img src="pcaat-logo2.png" width="75" height="75" /></td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <br>
+        <h2 style="font-family: Arial, Helvetica, sans-serif; text-align: center;">C E R T I F I C A T I O N</h2><br><br><br>
+        <div style="font-family: Arial, Helvetica, sans-serif; font-size: 11pt; text-align: justify; ">
+            <span style="line-height: 1cm;">This is to certify that <span id="namec"
+                style="text-decoration: underline; font-weight: bold; text-transform: uppercase; ">A</span>, is a bonafide
+            <span id="gradec" style="text-decoration: underline; font-weight: bold; text-transform: uppercase;"></span>
+            student under the <span id="strandc"
+                style="text-decoration: underline; font-weight: bold; text-transform: uppercase;"></span>, and candidate for
+            Graduation based on his/her academic performance for the <span id="semc"
+                style="text-decoration: underline; font-weight: bold; text-transform: uppercase;"></span>, School Year
+            2022-2023 at the Philippine College of Advanced Arts and Technology.</span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span style="line-height: 1cm;">This certification is issued upon request of the said student for any lawful purpose it may serve.</span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span style="line-height: 1cm;">Given this <span id="dayc"
+                style="text-decoration: underline; font-weight: bold; "></span> day of <span
+                id="monthc" style="text-decoration: underline; font-weight: bold; text-transform: uppercase;"></span> 2023 at
+            1914 Doña Faustina Building, Recto Avenue, Quiapo, Manila, Philippines.</span>
+        </div>
+        <br>
+        <br><br><br><br>
+        <center>
+            <p><span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 11pt;  text-align: center; font-weight: bold">MS.
+                    MAI NICOLE R. OLAGUER </span><br>
+                <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 11pt;  text-align: center; font-style: italic;">School
+                    Principal</span></p>
+        </center>
+    </div>
+    
+  </div>
+
+  </div>
+  <center>
+    <button type="button" onclick="printContent('cert-div')" class="btn btn-primary">Print Certificate</button>
+    </center>
+    <script src="index.js"></script>
+
+</body>
+</html>
